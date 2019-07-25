@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo2</title>
+        <script type="text/javascript">
+             
+            function checklogin(){
+                var username, password;
+                username = document.getElementById("txtusrname").value;
+                password = document.getElementById("txtpwd").value;
+                if((username == "akku") && (password == "akku")){
+                document.getElementById("heading").innerHTML = "Login Successful!!";
+            }
+            else{
+                alert("Invalid Credentials!!")
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1 id="heading">Hello</h1>
+        
+
+        <form onsubmit="checklogin()">
+            <label for="txtusrname">Username</label>
+            <input type="text" name="txtusrname"  id="txtusrname"> <br>
+            <label for="txtpwd">Password</label>
+            <input type="password" name="txtpwd" id="txtpwd"><br>
+            <input type="submit" value="login" ></br.>
+            <input type="reset" value="reset">
+
+        </form>
+
+    </body>
+</html>
